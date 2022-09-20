@@ -1,4 +1,4 @@
-import React, {usetState} from 'react'
+import React, {useState} from 'react'
 import { Routes, Route } from "react-router-dom"
 import Header from './compnonents/Header'
 import Footer from './compnonents/Footer'
@@ -14,6 +14,8 @@ import mockCats from "./mockCats"
 
 function App() {
   const [cats, setCats] = useState(mockCats)
+
+  console.log(cats)
   return (
     <>
    <Header/>
