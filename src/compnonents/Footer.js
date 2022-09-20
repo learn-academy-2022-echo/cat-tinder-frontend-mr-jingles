@@ -7,7 +7,9 @@ const Footer = () => {
   return (
     <div id="page-container"> 
         <div id="content-wrap"> 
-          <footer id="footer"> &copy; Francisco Solis & Elijah Bareto</footer>
+          <footer id="footer"> 
+            <p>&copy; Francisco Solis & Elijah Barreto</p>
+            </footer>
         </div>
     </div>
   )
