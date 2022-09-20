@@ -11,7 +11,6 @@ import NotFound from './pages/NotFound'
 import mockCats from "./mockCats"
 
 
-
 function App() {
   const [cats, setCats] = useState(mockCats)
 
