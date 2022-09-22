@@ -25,7 +25,7 @@ const Header = () => {
         </NavItem>            
         <NavItem>
           <NavLink 
-            to="./CatShow">
+            to="./CatNew">
             Create a Profile
           </NavLink>
         </NavItem>
