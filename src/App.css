@@ -37,7 +37,12 @@
   }
 }
 
-.header {
+.card {
+  margin: 2rem 0;
+}
 
-  
+.cat-cards-by-index {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
 }

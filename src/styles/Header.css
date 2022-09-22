@@ -2,5 +2,9 @@
     text-align: center;
     font-size: xx-large;
     background-color: bisque;
-    background-image: url('/src/assets/9878111.jpg') ;
+    background-image: url('/src/assets/cat.jpg') ;
+}
+
+.cat-logo{
+    width: 300px;
 }
