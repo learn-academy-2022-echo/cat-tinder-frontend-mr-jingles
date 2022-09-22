@@ -49,7 +49,7 @@ const CatNew = ( { createCat }) => {
         <Button onClick={handleSubmit} name="submit">
            Create New Cat Profile!
         </Button>
-        </Form>
+      </Form>
     </div>
   )
 }
