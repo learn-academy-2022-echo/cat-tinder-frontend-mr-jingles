@@ -1,15 +1,16 @@
-import { screen, render } from "@testing-library/react"
+import { screen, render } from '@testing-library/react'
+import userEvent from '@testing-library/user-event'
+import { BrowserRouter } from "react-router-dom";
 import Header from './Header'
 
 describe('<Header/>', () => {
     test('shows up without crashing', () => {
-        //Arrange
-        render(<Header/>) 
-        //Act -
-        //can be interactions like clicking
-        //be passive actions like seeing something       
-        const element = screen.getByText(/Cat Tinder/i)
-        // Assert
-        expect(element).toBeInTheDocument()
+        render(
+        <BrowserRouter>
+        <Header/> 
+        </BrowserRouter>)
+              
+              const indexLink = screen.getByText(/Find your Cat/i)
+              expect(indexLink).toBeInTheDocument()
     })
 })
