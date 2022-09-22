@@ -7,10 +7,10 @@ describe('CatIndex />', () => {
     test('renders the cards for each cat by the index', () => {
         render(
             <BrowserRouter> 
-            <CatIndex cats={mockCats}/>
+                <CatIndex cats={mockCats}/>
             </BrowserRouter>
-        )
-        mockCats.forEach(cat => {
+             )
+            mockCats.forEach(cat => {
             const element = screen.getByText(cat.name)
             expect(element).toBeInTheDocument()
         })
