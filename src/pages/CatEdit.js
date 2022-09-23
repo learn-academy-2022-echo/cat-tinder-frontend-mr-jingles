@@ -9,9 +9,9 @@ const CatEdit = ( { cats, updateCat }) => {
 
   const [editCat, setEditCat] = useState({
     name:"", 
-    age: currentCat.age, 
-    enjoys: currentCat.enjoys, 
-    image: currentCat.image
+    age: "", 
+    enjoys: "", 
+    image: ""
   })
 
   const handleChange = (e) => {

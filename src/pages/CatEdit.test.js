@@ -11,7 +11,7 @@ describe("<CatEdit/>", () => {
                 <CatEdit/>
             </BrowserRouter>
         )
-        const heading = screen.getByText(/Update Cat Profile/i)
+        const div = screen.getByText(/Update Cat Profile/i)
         expect(div).toBeInTheDocument()
 
     })
