@@ -13,7 +13,7 @@ const renderComponent = () => {
     )
   }
 
-describe('catShow', () => {
+describe('<catShow/>', () => {
     test('renders a card that gets called on for view with enjoys info', () => {
         renderComponent()
         expect(screen.getByText(mockCats[0].enjoys)).toBeInTheDocument()

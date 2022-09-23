@@ -1,19 +1,13 @@
 import React from 'react'
 import { useParams } from 'react-router-dom'
 import { Card, CardBody, CardText, CardTitle, Button } from 'reactstrap'
-import { useNavigate, NavLink } from 'react-router-dom'
+import {  NavLink } from 'react-router-dom'
 
-  const CatShow = ({ cats, updateCat }) => {
+  const CatShow = ({ cats }) => {
   const {id} = useParams()
   console.log(id)
   const currentCat = cats?.find(cat => cat.id === +id)
-  const navigate = useNavigate()
-//   const handleSubmit = () => {
-//     updateCat(currentCat, currentCat.id)
-//   navigate("/CatEdit/:id")
-// }  
-
-
+  
   return (
   <>
     <h1> Show us the Cats</h1>
