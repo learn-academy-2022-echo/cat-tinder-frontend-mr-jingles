@@ -7,7 +7,7 @@ describe('<Footer/>', () => {
         render(<Footer/>)
         
         const element = screen.getByText(/Francisco Solis & Elijah Barreto/i)
-        // Assert
+        
         expect(element).toBeInTheDocument()
     })
 })
