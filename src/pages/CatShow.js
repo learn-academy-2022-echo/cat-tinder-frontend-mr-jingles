@@ -1,14 +1,18 @@
 import React from 'react'
 import { useParams } from 'react-router-dom'
-import { Card, CardBody, CardText, CardTitle } from 'reactstrap'
+import { Card, CardBody, CardText, CardTitle, Button } from 'reactstrap'
+import { useNavigate, NavLink } from 'react-router-dom'
 
-
-  const CatShow = ({ cats }) => {
+  const CatShow = ({ cats, updateCat }) => {
   const {id} = useParams()
   console.log(id)
-
-
   const currentCat = cats?.find(cat => cat.id === +id)
+  const navigate = useNavigate()
+//   const handleSubmit = () => {
+//     updateCat(currentCat, currentCat.id)
+//   navigate("/CatEdit/:id")
+// }  
+
 
   return (
   <>
@@ -31,6 +35,11 @@ import { Card, CardBody, CardText, CardTitle } from 'reactstrap'
               {currentCat.enjoys}
             </CardText>
          </CardBody>
+         <NavLink to={`/CatEdit/${currentCat.id}`} className="nav-link">
+         <Button >
+          Edit Cat
+         </Button>
+         </NavLink>
       </Card>
   </>  
   )
