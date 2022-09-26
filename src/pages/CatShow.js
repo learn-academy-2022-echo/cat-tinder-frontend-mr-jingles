@@ -2,6 +2,7 @@ import React from 'react'
 import { useParams } from 'react-router-dom'
 import { Card, CardBody, CardText, CardTitle, Button } from 'reactstrap'
 import {  NavLink } from 'react-router-dom'
+import '../App.css'
 
   const CatShow = ({ cats }) => {
   const {id} = useParams()
@@ -10,31 +11,32 @@ import {  NavLink } from 'react-router-dom'
   
   return (
   <>
-    <h1> Show us the Cats</h1>
-      <Card
+    <h2 className='cat-card'> Meet {currentCat.name}
+      <Card className='cat-card'
         style={{
           width: '18rem'
-        }}
+        }} 
         >
         <img
         alt="card-image"
         src={currentCat.image}
         />
-        <CardBody>
+        <CardBody className='cat-card'>
           <CardTitle tag="h5">
-            {currentCat.name},
-            {currentCat.age},
+           Name: {currentCat.name} <br></br>Age:
+            {currentCat.age}
           </CardTitle>
-            <CardText>
+            <CardText className='cat-card'>
               {currentCat.enjoys}
             </CardText>
          </CardBody>
          <NavLink to={`/CatEdit/${currentCat.id}`} className="nav-link">
-         <Button >
-          Edit Cat
-         </Button>
+          <Button >
+            Edit Cat
+          </Button>
          </NavLink>
-      </Card>
+        </Card>
+      </h2>
   </>  
   )
 }

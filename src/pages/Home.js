@@ -1,8 +1,18 @@
 import React from 'react'
+import '../App.css'
+import catv from '../assets/catT.mp4'
+
 
 const Home = () => {
   return (
-    <div>Welcome to Cat Tinder Home</div>
+    <>
+      <div className='body'>
+     
+        <video src={catv} autoPlay loop muted/>
+
+      </div>
+    </>
+
   )
 }
 

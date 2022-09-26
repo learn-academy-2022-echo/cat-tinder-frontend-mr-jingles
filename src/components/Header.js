@@ -6,17 +6,14 @@ import cat from '../assets/cat.jpg'
 
 const Header = () => {
   return (
-    <div>
-      <Nav>
-        <NavItem>
-          <NavLink to ="/">
-              <img
-                src={cat}
-                alt="about icon"
-                className="nav-link"
-                /> 
-                Home
+    <div className='header'>
+      <Nav
+  justified
+  >
+        <NavItem className=''>
+          <NavLink to ="/">Home
            </NavLink>
+           <br></br>
         </NavItem>
         <NavItem>
             <NavLink to="./CatIndex">

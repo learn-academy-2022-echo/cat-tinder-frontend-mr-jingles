@@ -9,11 +9,18 @@ const mockCats = [ {
 
   {
     id: 2,
-    name: "meowcycles",
+    name: "Meowcycles",
     age: 7,
-    enjoys: "A calico, more like caliwoah. Enjoys working out and flexing making other cats sweat.  ",
+    enjoys: "A calico, more like caliwoah. Enjoys working out, flexing, and making other cats sweat.",
     image:
       "https://i1.sndcdn.com/artworks-000457187166-b1k6d8-t500x500.jpg" 
+  },
+  {
+    id: 3,
+    name: "Dexter",
+    age: 7,
+    enjoys: "Being the boss",
+    image:"https://helios-i.mashable.com/imagery/articles/03xrF9kkxvucwQ4Ei4Ag6cu/hero-image.fill.size_1248x702.v1646058414.jpg" 
   }
 ]
 

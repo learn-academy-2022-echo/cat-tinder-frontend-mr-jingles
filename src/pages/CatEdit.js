@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 import { Form, FormGroup, Input, Label, Button } from "reactstrap"
 import { useParams, useNavigate } from 'react-router-dom'
-
+import '../App.css'
 
 const CatEdit = ( { cats, updateCat }) => {
   const { id } = useParams()
@@ -26,33 +26,33 @@ const handleSubmit = () => {
 
   return (
     <>
-      <div>Update Cat Profile
-      </div>
-        <Form>
-            <FormGroup>
+      <div className='editPage, homeBack'>Update Cat Profile
+          <Form >
+            <FormGroup className='form'>
               <Label for="name">Edit Name</Label>
               <Input type="text" name="name" placeholder='name' onChange={handleChange} value={editCat.name} />
             </FormGroup>
 
-            <FormGroup>
+            <FormGroup className='form'>
               <Label for="age">Edit age</Label>
               <Input type="text" name="age" placeholder='age' onChange={handleChange} value={editCat.age} />
             </FormGroup>
 
-            <FormGroup>
+            <FormGroup className='form'>
               <Label for="enjoys">Edit description</Label>
               <Input type="text" name="enjoys" placeholder='Describe your Cat for everyone!'onChange={handleChange} value={editCat.enjoys} />
             </FormGroup>
 
-            <FormGroup>
+            <FormGroup className='form'>
               <Label for="image">Edit Profile Pic</Label>
               <Input type="text" name="image" placeholder='place url' onChange={handleChange} value={editCat.image} />
             </FormGroup>
 
-            <Button onClick={handleSubmit} name="submit">
+            <Button className=''onClick={handleSubmit} name="submit">
                Edit Cat
             </Button>
           </Form>
+        </div>
     </>
   )
 }

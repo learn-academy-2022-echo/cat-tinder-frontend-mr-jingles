@@ -1,0 +1,9 @@
+
+
+.editPage{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    /* background-color: rgb(28, 23, 33); */
+    background-image: url('assets/catTinder.jpg');
+}

@@ -1,10 +1,12 @@
 .header{
-    text-align: center;
-    font-size: xx-large;
-    background-color: bisque;
-    background-image: url('/src/assets/cat.jpg') ;
+  
+     background-color: black;
+     color: rgb(203, 203, 26);
+     
+
 }
 
 .cat-logo{
-    width: 300px;
+    width: 400px;
 }
+
